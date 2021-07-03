@@ -95,4 +95,22 @@ const SHOES = [
   },
 ];
 
-export default SHOES;
+const SHOE_CATEGORIES = [
+  'Lifestyle',
+  'Jordan',
+  'Running',
+  'Basketball',
+  'Training & Gym',
+  'Football',
+  'Skateboarding',
+  'American Football',
+  'Baseball',
+  'Golf',
+  'Tennis',
+  'Athletics',
+  'Walking',
+];
+
+const NAV = ['Sale', 'New Releases', 'Men', 'Women', 'Kids', 'Collections'];
+
+export { SHOES, SHOE_CATEGORIES, NAV };

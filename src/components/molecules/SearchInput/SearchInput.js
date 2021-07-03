@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { COLORS } from '../../constants';
-import VisuallyHidden from '../VisuallyHidden';
-import Icon from '../Icon';
+import { COLORS } from '../../../constants';
+import VisuallyHidden from '../../atoms/VisuallyHidden';
+import Icon from '../../atoms/Icon';
 
-const SearchInput = ({ label, ...delegated }) => {
+const SearchInput = ({ className, ...delegated }) => {
   return (
-    <Label>
+    <Label className={className}>
       <VisuallyHidden>Search</VisuallyHidden>
-      <Input {...delegated} placeholder="Search…" />
-      <SearchIcon id="search" strokeWidth={1} size={16} />
+      <Input {...delegated} placeholder='Search…' />
+      <SearchIcon id='search' strokeWidth={1} size={16} />
     </Label>
   );
 };

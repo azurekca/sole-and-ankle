@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { WEIGHTS } from '../../constants';
+import { WEIGHTS } from '../../../constants';
 
-const Logo = (props) => {
+const Logo = props => {
   return (
-    <Link href="/">
+    <Link href='/'>
       <Wrapper {...props}>Sole&amp;Ankle</Wrapper>
     </Link>
   );

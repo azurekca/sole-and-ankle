@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import Header from '../Header';
-import ShoeIndex from '../ShoeIndex';
+import Header from '../organisms/Header';
+import ShoeIndex from '../organisms/ShoeIndex';
 
 const App = () => {
   const [sortId, setSortId] = React.useState('newest');
