@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components/macro';
 
 import { COLORS, WEIGHTS } from '../../../constants';
-import Icon from '../Icon';
+import Icon from '../../atoms/Icon';
 
-const Select = ({ label, value, children, ...delegated }) => {
+const Select = ({ label, value, className, children, ...delegated }) => {
   const childArray = React.Children.toArray(children);
   const selectedChild = childArray.find(child => child.props.value === value);
 
@@ -26,7 +26,10 @@ const Select = ({ label, value, children, ...delegated }) => {
   );
 };
 
-const Wrapper = styled.label``;
+const Wrapper = styled.label`
+  align-items: center;
+  display: flex;
+`;
 
 const VisibleLabel = styled.span`
   color: ${COLORS.gray[700]};
