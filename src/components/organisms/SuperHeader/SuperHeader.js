@@ -9,10 +9,12 @@ import Icon from '../../atoms/Icon';
 const SuperHeader = () => {
   return (
     <Wrapper>
-      Free shipping on domestic orders over $75
+      <PromoText>Free shipping on domestic orders over $75</PromoText>
       <Search />
-      <HelpButton>Help</HelpButton>
-      <Cart id='shopping-bag' strokeWidth={1} />
+      <HelpLink href='/help'>Help</HelpLink>
+      <Cart>
+        <Icon id='shopping-bag' strokeWidth={1} />
+      </Cart>
     </Wrapper>
   );
 };
@@ -26,18 +28,22 @@ const Wrapper = styled.div`
   gap: 24px;
   height: 40px;
   align-items: center;
-  padding: 12px var(--horizontalPadding);
+  padding-left: var(--horizontalPadding);
+  padding-right: var(--horizontalPadding);
 `;
+
+const PromoText = styled.span``;
 
 const Search = styled(SearchInput)`
   margin-left: auto;
 `;
 
-const HelpButton = styled(UnstyledButton)`
+const HelpLink = styled.a`
   color: ${COLORS.gray[300]};
+  text-decoration: none;
 `;
 
-const Cart = styled(Icon)`
+const Cart = styled(UnstyledButton)`
   color: ${COLORS.gray[300]};
 `;
 
