@@ -9,22 +9,22 @@ const ShoeCard = ({ shoe, className }) => {
   const newShoe = isNewShoe(shoe.releaseDate);
   const badgeText = onSale ? 'Sale' : newShoe ? 'Just Released!' : '';
   const badgeClass = onSale ? 'on-sale' : newShoe ? 'new-shoe' : '';
-  console.log({ onSale, newShoe });
+
   return (
     <Card href={shoe.slug} className={className}>
       <Badge className={badgeClass}>{badgeText}</Badge>
       <ShoeImage src={shoe.imageSrc} alt='' />
       <MetaWrapper>
-        <Line>
+        <Row>
           <ShoeName>{shoe.name}</ShoeName>
           <RegPrice className={onSale ? 'on-sale' : ''}>
             {formatPrice(shoe.price)}
           </RegPrice>
-        </Line>
-        <Line>
+        </Row>
+        <Row>
           <ShoeOptions>{pluralize('Colour', shoe.numOfColors)}</ShoeOptions>
           {onSale ? <SalePrice>{formatPrice(shoe.salePrice)}</SalePrice> : null}
-        </Line>
+        </Row>
       </MetaWrapper>
     </Card>
   );
@@ -65,7 +65,7 @@ const ShoeImage = styled.img`
 
 const MetaWrapper = styled.div``;
 
-const Line = styled.div`
+const Row = styled.div`
   display: flex;
   justify-content: space-between;
 `;
