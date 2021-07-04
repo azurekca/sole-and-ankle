@@ -64,6 +64,7 @@ table {
     float above the app.
   */
   isolation: isolate;
+  --horizontalPadding: 32px;
 }
 
 html, body, #root {

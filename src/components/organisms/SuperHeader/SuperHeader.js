@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   gap: 24px;
   height: 40px;
   align-items: center;
-  padding: 12px 32px;
+  padding: 12px var(--horizontalPadding);
 `;
 
 const Search = styled(SearchInput)`
