@@ -70,7 +70,7 @@ const Line = styled.div`
   justify-content: space-between;
 `;
 
-const ShoeName = styled.h2`
+const ShoeName = styled.h3`
   font-weight: ${WEIGHTS.medium};
 `;
 const ShoeOptions = styled.p`

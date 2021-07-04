@@ -43,7 +43,7 @@ const GridHeader = styled.div`
   margin-bottom: 32px;
 `;
 
-const CurrentCategory = styled.h1`
+const CurrentCategory = styled.h2`
   color: ${COLORS.gray[900]};
   font-size: ${24 / 16}rem;
   font-weight: ${WEIGHTS.medium};
