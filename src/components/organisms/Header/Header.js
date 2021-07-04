@@ -11,10 +11,12 @@ const Header = () => {
   return (
     <Wrapper>
       <SuperHeader />
-      <MainNav>
+      <MainNav aria-label='primary'>
         <LogoLink />
-        {NAV.map(link => (
-          <Link href={`/${link}`}>{link}</Link>
+        {NAV.map((link, index) => (
+          <Link key={index} href={`/${link}`}>
+            {link}
+          </Link>
         ))}
       </MainNav>
     </Wrapper>
