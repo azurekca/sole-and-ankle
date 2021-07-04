@@ -5,13 +5,11 @@ import Header from '../organisms/Header';
 import ShoeIndex from '../organisms/ShoeIndex';
 
 const App = () => {
-  const [sortId, setSortId] = React.useState('newest');
-
   return (
     <>
       <Header />
       <Main>
-        <ShoeIndex sortId={sortId} setSortId={setSortId} />
+        <ShoeIndex />
       </Main>
     </>
   );
