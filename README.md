@@ -1,5 +1,7 @@
 # Sole&Ankle — Module 4 workshop
-
+---
+**I took a partial from scratch approach to solving this. I kept the base components (and slightly modified as needed), and recreated the more complex components from scratch.**
+---
 In this workshop, our goal is to finish building an e-commerce store!
 
 The good news is, most of our work is done already. We just need to write some additional CSS to construct the layout; things are a bit messy right now!
