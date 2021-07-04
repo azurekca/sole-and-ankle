@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components/macro';
 
-import { COLORS, WEIGHTS } from '../../../constants';
-
 import ShoeGrid from '../../organisms/ShoeGrid';
 import ShoeSidebar from '../../organisms/ShoeSidebar';
 
@@ -21,6 +19,7 @@ const ShoeIndex = () => {
 };
 
 const Wrapper = styled.div`
+  align-items: baseline;
   display: flex;
   gap: var(--horizontalPadding);
 `;

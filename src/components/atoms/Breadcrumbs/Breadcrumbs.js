@@ -42,6 +42,5 @@ const Wrapper = styled.nav`
   align-items: center;
   display: flex;
   font-size: 0.875rem;
-  height: 46px;
 `;
 export default Breadcrumbs;
